@@ -1,3 +1,4 @@
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-researchers/community)
 # vett
 Pluggable tool to vet open source repositories
 
