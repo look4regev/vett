@@ -2,7 +2,7 @@
 Pluggable tool to vet open source repositories
 
 ## Intro
-See Medium blog post- [TBD]
+See [Medium blog post](https://medium.com/@Look4regev/should-i-use-this-open-source-m-sc-cs-thesis-7549403962ce)
 
 ## Resources
 1. [Strategy desgin pattern](https://github.com/faif/python-patterns/blob/master/patterns/behavioral/strategy.py) for plugins implementation
