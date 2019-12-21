@@ -3,7 +3,7 @@
 # vett
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-researchers/community)
 
-Your X-RAY Glasses to Using Open Source
+**Your X-RAY Glasses to Using Open Source**
 
 Instantly vet open source repositories for security, community and quality. Pluggable. Free. Open Source.
 
@@ -20,6 +20,9 @@ We all use Open Source. Let's make it easier for us and for the world by buildin
 vett will become the standard for using open source and now is the time to influence on being a core contributer.
 
 vett saves us time and keeps us safe.
+
+## Roadmap and MVP
+See the github [project](https://github.com/look4regev/vett/projects/1).
 
 ## Background
 See [Medium blog post](https://medium.com/@Look4regev/should-i-use-this-open-source-m-sc-cs-thesis-7549403962ce)
