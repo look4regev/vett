@@ -1,13 +1,25 @@
-![](media/cover.png)
+![](../cover.png)
 
 # vett
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-researchers/community)
 
-Pluggable tool to vet open source repositories
+Your X-RAY Glasses to Using Open Source
 
-## Intro
+Instantly vet open source repositories for security, community and quality. Pluggable. Free. Open Source.
+
+## Business Value
+Tech companies will gain better and faster decisions on using the right Open Source with higher security standards.
+
+Cut down developement and maintenance times by seeing into the open source they use.
+
+Prevent damages of millions in security issues no one can catch other than vett.
+
+## Contributing
+We all use Open Source. Let's make it easier for us and for the world by building vett.
+
+vett will become the standard for using open source and now is the time to influence on being a core contributer.
+
+vett saves us time and keeps us safe.
+
+## Background
 See [Medium blog post](https://medium.com/@Look4regev/should-i-use-this-open-source-m-sc-cs-thesis-7549403962ce)
-
-## Resources
-1. [Strategy desgin pattern](https://github.com/faif/python-patterns/blob/master/patterns/behavioral/strategy.py) for plugins implementation
-2. [Articles](https://medium.com/r/?url=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1FL-S5XQeT1O12fPpLB0o6PnWXWcNVOxE) about open source used as an insipiration.
