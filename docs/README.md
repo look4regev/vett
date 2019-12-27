@@ -26,3 +26,7 @@ See the github [project](https://github.com/look4regev/vett/projects/1).
 
 ## Background
 See [Medium blog post](https://medium.com/@Look4regev/should-i-use-this-open-source-m-sc-cs-thesis-7549403962ce)
+
+# Copyright
+
+Copyright (c) 2019-2020 [Regev Golan](https://look4regev.com). See [LICENSE](https://github.com/look4regev/vett/blob/master/LICENSE) for further details.

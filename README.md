@@ -14,3 +14,15 @@ See [Medium blog post](https://medium.com/@Look4regev/should-i-use-this-open-sou
 
 ## Roadmap and MVP
 See the github [project](https://github.com/look4regev/vett/projects/1).
+
+# Contributing
+
+Fork, implement, add tests, pull request, get my everlasting thanks and a respectable place here :).
+
+### Thanks:
+
+To all vett [Contributors](https://github.com/look4regev/vett/graphs/contributors) - you make this happen, thanks!
+
+# Copyright
+
+Copyright (c) 2019-2020 [Regev Golan](https://look4regev.com). See [LICENSE](https://github.com/look4regev/vett/blob/master/LICENSE) for further details.
