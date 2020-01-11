@@ -3,6 +3,7 @@
 # vett
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-researchers/community)
 [![Actions Status](https://github.com/look4regev/vett/workflows/Python%20application/badge.svg)](https://github.com/look4regev/vett/actions)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://opensource.org/licenses/MIT)
 
 Pluggable tool to vet open source repositories
 
