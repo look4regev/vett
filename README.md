@@ -4,6 +4,8 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-researchers/community)
 [![Actions Status](https://github.com/look4regev/vett/workflows/Python%20application/badge.svg)](https://github.com/look4regev/vett/actions)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://opensource.org/licenses/MIT)
+[![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+[![python](https://img.shields.io/badge/python-3.8-blue)](https://docs.python.org/3/whatsnew/index.html)
 
 Pluggable tool to vet open source repositories
 
