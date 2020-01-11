@@ -9,7 +9,7 @@ class CollaboratorsGrader:
         self.fetcher = fetcher
 
     def grade_collaborators_veterancy(self, url):
-        collaborators_created_at = self.fetcher.get_collaborators_created_at(url)
+        collaborators_created_at = self.fetcher.get_latest_collaborators_created_at(url)
         younger_than_threshold = [
             collaborator
             for collaborator, created_at in collaborators_created_at.items()

@@ -2,6 +2,7 @@ import os
 from github import Github
 
 GITHUB_URL_PREFIX = "https://github.com/"
+SCANNED_COMMITS_COUNT = 30
 
 
 class GithubFetcherCollaborators:
@@ -9,18 +10,15 @@ class GithubFetcherCollaborators:
         github_personal_access_token = os.environ["GITHUB_PERSONAL_ACCESS_TOKEN"]
         self.github = Github(github_personal_access_token)
 
-    def get_collaborators_created_at(self, url):
+    def get_latest_collaborators_created_at(self, url):
         owner_name, repo_name = parse_github_url(url)
         user = self.github.get_user(owner_name)
         repository = user.get_repo(repo_name)
-        collaborators = repository.get_collaborators()
-        pushable_collaborators = [
-            coll for coll in collaborators if coll.permissions.push
-        ]
-        pushable_collaborators_created_at = {
-            collaborator.login: collaborator.created_at
-            for collaborator in pushable_collaborators
-        }
+        commits = repository.get_commits()
+        pushable_collaborators_created_at = {}
+        for i in range(SCANNED_COMMITS_COUNT):
+            committer = commits[i].committer
+            pushable_collaborators_created_at[committer] = committer.created_at
         return pushable_collaborators_created_at
 
 
