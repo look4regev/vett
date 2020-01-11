@@ -1,14 +1,13 @@
 import os
 from github import Github
 
-# using username and password
-GITHUB_PERSONAL_ACCESS_TOKEN = os.environ["GITHUB_PERSONAL_ACCESS_TOKEN"]
 GITHUB_URL_PREFIX = "https://github.com/"
 
 
 class GithubFetcherCollaborators:
     def __init__(self):
-        self.github = Github(GITHUB_PERSONAL_ACCESS_TOKEN)
+        github_personal_access_token = os.environ["GITHUB_PERSONAL_ACCESS_TOKEN"]
+        self.github = Github(github_personal_access_token)
 
     def get_collaborators_created_at(self, url):
         owner_name, repo_name = parse_github_url(url)
