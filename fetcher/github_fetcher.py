@@ -3,13 +3,15 @@ from github import Github
 
 # using username and password
 GITHUB_PERSONAL_ACCESS_TOKEN = os.environ["GITHUB_PERSONAL_ACCESS_TOKEN"]
+GITHUB_URL_PREFIX = "https://github.com/"
 
 
 class GithubFetcherCollaborators:
     def __init__(self):
         self.github = Github(GITHUB_PERSONAL_ACCESS_TOKEN)
 
-    def get_collaborators_created_at(self, owner_name, repo_name):
+    def get_collaborators_created_at(self, url):
+        owner_name, repo_name = parse_github_url(url)
         user = self.github.get_user(owner_name)
         repository = user.get_repo(repo_name)
         collaborators = repository.get_collaborators()
@@ -21,3 +23,10 @@ class GithubFetcherCollaborators:
             for collaborator in pushable_collaborators
         }
         return pushable_collaborators_created_at
+
+
+def parse_github_url(url):
+    last_slash_index = url.rfind("/")
+    owner = url[len(GITHUB_URL_PREFIX) : last_slash_index]
+    repo = url[last_slash_index + 1 :]
+    return owner, repo

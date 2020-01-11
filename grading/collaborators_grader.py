@@ -8,12 +8,10 @@ class CollaboratorsGrader:
     def __init__(self, fetcher):
         self.fetcher = fetcher
 
-    def grade_collaborators_veterancy(self, owner, repo):
-        collaborators_created_at = self.fetcher.get_collaborators_created_at(
-            owner, repo
-        )
+    def grade_collaborators_veterancy(self, url):
+        collaborators_created_at = self.fetcher.get_collaborators_created_at(url)
         younger_than_threshold = [
-            collaborator.login
+            collaborator
             for collaborator, created_at in collaborators_created_at.items()
             if created_at + timedelta(days=VETERANCY_THRESHOLD_DAYS) > datetime.now()
         ]
