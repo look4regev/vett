@@ -16,9 +16,10 @@ class GithubFetcherCollaborators:
         repository = user.get_repo(repo_name)
         commits = repository.get_commits()
         pushable_collaborators_created_at = {}
-        for i in range(SCANNED_COMMITS_COUNT):
-            committer = commits[i].committer
-            pushable_collaborators_created_at[committer] = committer.created_at
+        for i, commit in enumerate(commits):
+            pushable_collaborators_created_at[commit.committer] = commit.committer.created_at
+            if i > SCANNED_COMMITS_COUNT:
+                break
         return pushable_collaborators_created_at
 
 
