@@ -2,6 +2,7 @@
 
 # vett
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/open-source-researchers/community)
+[![Actions Status](https://github.com/look4regev/vett/workflows/Python%20application/badge.svg)](https://github.com/look4regev/vett/actions)
 
 Pluggable tool to vet open source repositories
 
